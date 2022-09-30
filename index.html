@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Nzinga</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <table class="tabela" border>
+        <caption>Outubro</caption>
+
+        <thead class="linhaDias">
+            <tr>
+              
+                <th>Domingo</th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+                <th>Sábado</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="conteudos">
+                
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+            </tr>        
+            <tr class="conteudos">
+                
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+            </tr>
+            <tr class="conteudos">
+                
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+            </tr>
+            <tr class="conteudos">
+                
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+            </tr>
+            <tr class="conteudos">
+                
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+            </tr>
+            <tr class="conteudos">
+                
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+                <td class="celula"></td>
+            </tr>
+           
+        </tbody>  
+    </table>
+
+    
+    <aside class="lateral">
+        <h2 id="tituloCadastro">Cadastre aqui seu agendamento</h2>
+        <form action="/entradas.php" method="post">
+
+            <fieldset>
+                <legend>Trancista:</legend>
+                <label for="trancista1">
+                    <input type="checkbox" name="trancista1" value="Belle">
+                    Belle
+                </label>
+                <br>
+                <label for="trancista2">
+                    <input type="checkbox" name="trancista2" value="Laila">
+                    Laila
+                </label>
+                <br>
+                <label for="trancista3">
+                    <input type="checkbox" name="trancista3" value="Luz">
+                    Luz
+                </label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <label for="cliente">Cliente:</label><br>
+                <input type="text" id="cliente" name="cliente" placeholder="Nome">
+                <br><br>
+
+                <label for="contatoCliente">Contato:</label><br>
+                <input type="text" id="contatoCliente" required name="contatoCliente" placeholder="@ ou celular">
+            </fieldset>
+            
+            <br>
+
+            <fieldset>
+                <legend>Tipo do procedimento:</legend>
+                <div class="lado-a-ladoProcedimento">
+                    <label>
+                        <input type="radio" name="tipoProcedimento" value="Boxbraids">
+                        Boxbraids
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="tipoProcedimento" value="Nagô">
+                        Nagô
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="tipoProcedimento" value="Penteado">
+                        Penteado
+                    </label>
+                </div>
+                <div class="lado-a-ladoProcedimento">
+                    <label>
+                        <input type="radio" name="tipoProcedimento" value="Twists">
+                        Twists
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="tipoProcedimento" value="Fulani">
+                        Fulani
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <label for="dataAgendada">Data do procedimento:</label><br>
+                <input type="date" id="dataAgendada" required name="dataAgendada">
+                <br><br>
+
+                <label for="descricao">Detalhes sobre o atendimento:</label><br>
+                <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Use aqui para registrar qualquer informação a mais que você julgar útil sobre o procedimento ;)"></textarea>
+                <br><br>
+
+                <label for="valor">Valor do procedimento (R$):</label>
+                <input type="number" id="valor" required value="300" min="35" step="5" name="valor">
+                <br><br>
+                
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </aside>
+</body>
+</html>

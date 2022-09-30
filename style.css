@@ -1,0 +1,70 @@
+body{
+    display: inline;
+    background-color: aquamarine;
+    margin: 0;
+    position: fixed;
+}
+
+.tabela{
+    display: inline-block;
+    margin: 30px;
+
+    width: 70%;
+    height: 100%;
+}
+
+caption{
+    font-size: 60px;
+    padding: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.tabela td {
+    color: #f0dcdc;
+    padding: 5px;
+    width: 150px;
+    height: 75px;
+    
+}
+
+.tabela tr:nth-child(even){
+    background-color: #efefef;
+}
+
+.tabela tr:nth-child(odd){
+    background-color: #FFFFFF;
+}
+
+.tabela thead th{
+    background-color: #ff9ccc;
+}
+
+
+.lateral{
+    float: right;
+    height: 100%;
+
+    width: 20%;
+    background: #f1f1f1;
+    padding: 25px;
+
+    
+    
+   
+}
+
+form{
+    height: 100%;
+}
+
+fieldset{
+    padding: 4px;
+}
+
+.lado-a-ladoProcedimento{
+    display: inline-block;
+}
+
+#tituloCadastro{
+    margin-top: 0;
+}
